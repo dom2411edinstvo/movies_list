@@ -94,4 +94,3 @@ moviesListContainer.addEventListener('click', function (event) {
     }
 })
 
-
