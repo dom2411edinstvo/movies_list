@@ -52,6 +52,19 @@ function addMovie() {
 
         // Очищаем инпут после добавления
         inputMovieAdd.value = '';
+
+        // Добавление обработчика для нового чекбокса
+        const newCheckbox = newMovieItem.querySelector('.movies__checkbox');
+        newCheckbox.addEventListener('change', function () {
+            const checkboxReal = newMovieItem.querySelector('.movies__checkbox-real');
+            if (newCheckbox.checked) {
+                newMovieItem.classList.add(movieChecked);
+                checkboxReal.style.background = 'rgba(101, 50, 248, 1)'; // Добавляем фон
+            } else {
+                newMovieItem.classList.remove(movieChecked);
+                checkboxReal.style.background = 'transparent'; // Удаляем фон
+            }
+        })
     }
 }
 

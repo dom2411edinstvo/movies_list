@@ -121,6 +121,7 @@
     line-height: 23px;
     color: rgba(243, 246, 249, 1);
     background: rgba(58, 57, 57, 1);
+    cursor: pointer;
 }
 
 .movies__checkbox {
