@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Список фильмов 2024</title>
+    <!-- Фавикон -->
+    <link rel="icon" href="./favicon.png" type="image/png" />
+    <!-- Сброс стилей по умолчанию -->
+    <link rel="stylesheet" href="./reset.css" />
+    <!-- Шрифт "Arimo" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Подключение файла с основными стилями -->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="movies">
+        <div class="movies__wrap">
+          <div class="movies__heading-block">
+            <div class="movies__heading-wrap">
+              <p class="movies__heading-top-first">Список фильмов</p>
+              <p class="movies__heading-top-second">2024</p>
+            </div>
+            <h1 class="movies__heading">Посмотреть</h1>
+          </div>
+          <div class="movies__panel">
+            <div class="movies__input-wrap">
+              <input
+                type="text"
+                class="input js-movies__input movies__input"
+                placeholder="Добавить фильм"
+              />
+              <button
+                class="btn js-movies__btn-add movies__btn-add"
+                aria-label="Добавить новый фильм"
+              >
+                <img
+                  src="./arrow-right.svg"
+                  alt="кнопка добавить новый фильм в список"
+                  class="movies__btn-add__arrow"
+                />
+              </button>
+            </div>
+            <ul class="js-movies__list movies__list">
+              <li class="js-movies__list-item movies__list-item">
+                <input type="checkbox" class="input movies__checkbox" /><span
+                  class="movies__checkbox-real"
+                ></span>
+                <!--настоящий чекбокс -->Остров проклятых
+                <img
+                  src="./cross.svg"
+                  alt="кнопка удалить фильм из списка"
+                  class="movies__list-item__cross"
+                />
+              </li>
+              <li class="js-movies__list-item movies__list-item">
+                <input type="checkbox" class="input movies__checkbox" /><span
+                  class="movies__checkbox-real"
+                ></span
+                >Поймай меня, если сможешь
+                <img
+                  src="./cross.svg"
+                  alt="кнопка удалить фильм из списка"
+                  class="movies__list-item__cross"
+                />
+              </li>
+              <li class="js-movies__list-item movies__list-item">
+                <input
+                  type="checkbox"
+                  class="input js-movies__checkbox movies__checkbox"
+                /><span class="movies__checkbox-real"></span>Отступники
+                <img
+                  src="./cross.svg"
+                  alt="кнопка удалить фильм из списка"
+                  class="movies__list-item__cross"
+                />
+              </li>
+              <li class="js-movies__list-item movies__list-item">
+                <input type="checkbox" class="input movies__checkbox" /><span
+                  class="movies__checkbox-real"
+                ></span
+                >Волк с Уолл-Стрит
+                <img
+                  src="./cross.svg"
+                  alt="кнопка удалить фильм из списка"
+                  class="movies__list-item__cross"
+                />
+              </li>
+              <li class="js-movies__list-item movies__list-item">
+                <input type="checkbox" class="input movies__checkbox" /><span
+                  class="movies__checkbox-real"
+                ></span
+                >Начало
+                <img
+                  src="./cross.svg"
+                  alt="кнопка удалить фильм из списка"
+                  class="movies__list-item__cross"
+                />
+              </li>
+              <li class="js-movies__list-item movies__list-item">
+                <input type="checkbox" class="input movies__checkbox" /><span
+                  class="movies__checkbox-real"
+                ></span
+                >Выживший
+                <img
+                  src="./cross.svg"
+                  alt="кнопка удалить фильм из списка"
+                  class="movies__list-item__cross"
+                />
+              </li>
+              <li class="js-movies__list-item movies__list-item">
+                <input type="checkbox" class="input movies__checkbox" /><span
+                  class="movies__checkbox-real"
+                ></span
+                >Титаник
+                <img
+                  src="./cross.svg"
+                  alt="кнопка удалить фильм из списка"
+                  class="movies__list-item__cross"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
